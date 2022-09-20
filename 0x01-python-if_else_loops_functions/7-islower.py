@@ -1,3 +1,3 @@
 #!/usr/bin/python3
 def islower(c):
-    print(c.islower())
+    return(ord('a') <= ord(c) <= ord('z'))
