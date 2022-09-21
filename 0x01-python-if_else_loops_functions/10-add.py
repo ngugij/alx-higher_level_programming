@@ -1,4 +1,4 @@
 #!/usr/bin/python3
 def add(a, b):
-    print(f'{a + b}', end="")
+    print(a + b)
     return
