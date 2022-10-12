@@ -9,11 +9,11 @@ class Square:
         Args:
             size (int): size of a square
         """
-        self.size = size
+        self.__size = size
 
     def area(self):
         """Returns area of a square"""
-        return (self.__size ** 2)
+        return (self.__size) ** 2
 
     @property
     def size(self):
