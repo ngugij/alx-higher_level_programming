@@ -53,8 +53,8 @@ class SinglyLinkedList:
         string = ""
         tmp = self.__head
         while tmp is not None:
-            string = string + str(tmp)
+            string += str(tmp)
             if tmp.next_node is not None:
-                string = string + "\n"
+                string += "\n"
             tmp = tmp.next_node
         return string
