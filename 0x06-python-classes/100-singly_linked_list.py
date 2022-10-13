@@ -24,8 +24,7 @@ class Node:
     def next_node(self, value):
         if value is not None and type(value) is not Node:
             raise TypeError("next_node must be a Node object")
-        else:
-            self.__next_node = value
+        self.__next_node = value
 
     def __str__(self):
         return str(self.__data)
@@ -41,8 +40,7 @@ class SinglyLinkedList:
         if tmp is None or tmp.data >= value:
             if tmp:
                 new.next_node = tmp
-            else:
-                self.__head = new
+            self.__head = new
             return
         while tmp.next_node is not None:
             if tmp.next_node.data >= value:
@@ -58,6 +56,5 @@ class SinglyLinkedList:
             string = string + str(tmp)
             if tmp.next_node is not None:
                 string = string + "\n"
-            else:
-                tmp = tmp.next_node
+            tmp = tmp.next_node
         return string
