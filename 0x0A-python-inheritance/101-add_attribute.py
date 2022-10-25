@@ -2,10 +2,10 @@
 """add_attribute module"""
 
 
-class add_attribute(obj, attr, value):
+class add_attribute(obj, atr, value):
     """adds a new attribute to an object
         if it’s possible"""
     if not hasattr(obj, "__dict__"):
         raise TypeError("can't add new attribute")
     else:
-        setattr(obj, attr, value)
+        setattr(obj, atr, value)
