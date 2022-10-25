@@ -1,4 +1,4 @@
-The ``7-base_geometry`` module
+The ``BaseGeometry`` module
 ======================
 
 Using ``BaseGeometry``
