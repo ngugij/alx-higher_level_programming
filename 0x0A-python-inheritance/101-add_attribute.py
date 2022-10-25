@@ -7,4 +7,4 @@ class add_attribute(obj, atr, value):
         if it’s possible"""
     if not hasattr(obj, "__dict__"):
         raise TypeError("can't add new attribute")
-    setattr(obj, atr, value)
+    obj.atr = value
