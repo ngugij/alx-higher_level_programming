@@ -29,6 +29,10 @@ try:
             for key, value in sorted(stat_code.items()):
                 if value:
                     print("{:s}: {:d}".format(key, value))
+    print("File size: {:d}".format(size))
+    for key, value in sorted(stat_code.items()):
+        if value:
+            print("{:s}: {:d}".format(key, value))
 except KeyboardInterrupt:
     print("File size: {:d}".format(size))
     for key, value in sorted(stat_code.items()):
