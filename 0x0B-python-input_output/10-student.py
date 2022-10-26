@@ -22,4 +22,4 @@ class Student:
                 n_dict[attr] = self.__dict__[attr]
             except Exception:
                 pass
-            return n_dict
+        return n_dict
