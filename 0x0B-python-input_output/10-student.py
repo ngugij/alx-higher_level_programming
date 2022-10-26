@@ -20,6 +20,6 @@ class Student:
         for attr in attrs:
             try:
                 n_dict[attr] = self.__dict__[attr]
-            except:
+            except Exception:
                 pass
             return n_dict
